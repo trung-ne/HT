@@ -545,11 +545,6 @@ img {
   animation: splashImageFadeIn 0.65s ease 0.75s forwards;
 }
 
-.p-splash__img--home {
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 .p-splash--light-bg {
   background-color: #ffffff;
 }

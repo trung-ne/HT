@@ -1,7 +1,6 @@
 ﻿import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { SUPPORTED_LANGUAGES, isSupportedLanguage } from "@/lib/i18n";
-import PageTransition from "@/components/providers/PageTransition";
 
 type LangLayoutProps = {
   children: ReactNode;
@@ -21,5 +20,5 @@ export default async function LangLayout({ children, params }: LangLayoutProps) 
     notFound();
   }
 
-  return <PageTransition>{children}</PageTransition>;
+  return children;
 }

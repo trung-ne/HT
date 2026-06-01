@@ -21,7 +21,7 @@ export default function BlogDetailWrapper({ lang, post, related }: BlogDetailWra
     isHeaderFixed,
     showPagetop,
     toggleMobileMenu,
-  } = useHomePageState(lang);
+  } = useHomePageState(lang, { enableSplash: false });
 
   return (
     <div id="site_wrap">

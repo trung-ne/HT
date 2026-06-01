@@ -172,4 +172,167 @@ export const allPosts: BlogPost[] = [
 <p>Hộ chiếu, chứng minh tài chính (sao kê ngân hàng) và các giấy tờ liên quan. redhomes hỗ trợ chuẩn bị toàn bộ hồ sơ.</p>
 `,
   },
+  {
+    slug: "tokyo-2025-market-trends",
+    lang: "en",
+    title: "Tokyo Real Estate Market Trends 2025-2026",
+    excerpt:
+      "Latest insights on Tokyo's residential market: price movements, emerging neighborhoods, and what to expect in the coming year.",
+    category: "market",
+    coverImage:
+      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-karolina-grabowska-8554832-scaled.jpg",
+    publishedAt: "2026-01-15",
+    readingMinutes: 7,
+    tags: ["Market", "Tokyo", "Trends", "2026"],
+    content: `
+<p>The Tokyo real estate market enters 2026 with notable momentum. We break down the latest trends affecting residential properties and investment returns.</p>
+<h2>Price Appreciation in Urban Centers</h2>
+<p>Central wards (Minato, Shibuya, Chiyoda) show 2-4% year-on-year price growth, driven by limited supply and sustained foreign demand.</p>
+<h2>Emerging Neighborhoods</h2>
+<p>Emerging areas like Koenji and Shimokitazawa are attracting younger investors with lower entry prices and rising rental yields.</p>
+<h2>Foreign Investor Participation</h2>
+<p>Approximately 8-12% of Tokyo condo sales now involve foreign buyers, up from 5% five years ago. Policy remains welcoming.</p>
+<h2>Interest Rate Environment</h2>
+<p>With Japanese rates normalizing gradually, mortgage rates remain historically low compared to Western markets.</p>
+`,
+  },
+  {
+    slug: "managing-japan-rental-property",
+    lang: "en",
+    title: "Essential Tips for Managing Rental Property in Japan as a Non-Resident",
+    excerpt:
+      "Practical advice on property maintenance, tenant screening, communication with management companies, and legal obligations.",
+    category: "guide",
+    coverImage:
+      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-max-vakhtbovych-7060815-scaled.jpg",
+    publishedAt: "2026-01-05",
+    readingMinutes: 9,
+    tags: ["Management", "Rental", "Non-Resident", "Legal"],
+    content: `
+<p>Owning a rental property in Japan while living abroad requires delegation and trust. Here's how to manage it effectively.</p>
+<h2>Hire a Property Management Company</h2>
+<p>Most foreign landlords engage a licensed management company (kanri kaisha). They handle rent collection, maintenance coordination, and tenant communication.</p>
+<h2>Legal Obligations</h2>
+<p>File a tax return annually, maintain building records, and ensure property insurance is current. redhomes can assist with compliance.</p>
+<h2>Tenant Screening</h2>
+<p>Japanese management companies typically guarantee quality tenants through strict vetting and require guarantor co-signatures.</p>
+<h2>Maintenance Budget</h2>
+<p>Reserve 5-8% of annual rental income for maintenance and repairs. Build a 10-year replacement fund for major systems.</p>
+`,
+  },
+  {
+    slug: "chon-lang-song-du-hoc-tokyo",
+    lang: "vi",
+    title: "Chọn khu vực sống lý tưởng cho du học sinh tại Tokyo",
+    excerpt:
+      "So sánh tiện nghi, chi phí sinh hoạt, giao thông và cộng đồng du học sinh ở các khu vực phổ biến.",
+    category: "guide",
+    coverImage:
+      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-marcus-herzberg-887753-scaled.jpg",
+    publishedAt: "2025-02-10",
+    readingMinutes: 6,
+    tags: ["Du học", "Tokyo", "Khu vực sống", "Chi phí"],
+    content: `
+<p>Tokyo có hàng chục khu vực đáng sống, mỗi nơi có đặc tính riêng. Hãy tìm những khu vực phù hợp nhất cho bạn.</p>
+<h2>Khu vực Shibuya</h2>
+<p>Sôi động, trẻ trung, gần trường đại học. Chi phí cao hơn nhưng tiện nghi dồi dào. Phù hợp với những sinh viên muốn đời sống xã hội.</p>
+<h2>Khu vực Shinjuku</h2>
+<p>Trung tâm giao thương, công luật tốt. Chi phí trung bình. Rất tiện cho du học sinh muốn tiếp cận mọi thứ dễ dàng.</p>
+<h2>Khu vực Chiyoda</h2>
+<p>Yên tĩnh, có cảm giác an toàn cao. Chi phí cao hơn nhưng chất lượng sống tốt.</p>
+<h2>Khu vực Nakano</h2>
+<p>Giá rẻ hơn, cộng đồng du học lớn. Giao thông tốt nhưng kém sôi động so với Shibuya.</p>
+`,
+  },
+  {
+    slug: "huong-dan-thue-can-ho-tokyo",
+    lang: "vi",
+    title: "Hướng dẫn thuê căn hộ tại Tokyo: Quy trình & Chi phí",
+    excerpt:
+      "Tất cả những gì bạn cần biết để thuê căn hộ tại Tokyo, từ tìm kiếm đến ký hợp đồng.",
+    category: "guide",
+    coverImage:
+      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-max-vakhtbovych-7060815-scaled.jpg",
+    publishedAt: "2025-02-01",
+    readingMinutes: 7,
+    tags: ["Thuê nhà", "Tokyo", "Hướng dẫn", "Chi phí"],
+    content: `
+<p>Thuê nhà tại Tokyo khác với các nước khác. Hãy hiểu rõ quy trình để tránh bất ngờ.</p>
+<h2>Chi phí khác nhau</h2>
+<p><strong>Tiền cọc (Shikikin):</strong> Thường 1-2 tháng tiền thuê. Trả lại sau khi chuyển đi.<br/>
+<strong>Phí môi giới (Reikin):</strong> 1 tháng tiền thuê, không hoàn lại.<br/>
+<strong>Bảo hiểm:</strong> 5,000-15,000 yen mỗi năm.</p>
+<h2>Quy trình</h2>
+<ol><li>Tìm kiếm online (Suumo, Homes)</li><li>Liên hệ với công ty bất động sản</li><li>Xem lại căn hộ</li><li>Nộp đơn xin thuê</li><li>Xét duyệt (thường 3-5 ngày)</li><li>Ký hợp đồng và chuyển vào</li></ol>
+`,
+  },
+  {
+    slug: "tokyo-giao-tong-va-sinh-hoat",
+    lang: "vi",
+    title: "Giao thông & Chi phí sinh hoạt tại Tokyo trong năm 2026",
+    excerpt:
+      "Cập nhật chi phí thuê nhà, ăn uống, giao thông công cộng và giải trí ở Tokyo.",
+    category: "market",
+    coverImage:
+      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-mart-production-7415041-scaled.jpg",
+    publishedAt: "2025-01-20",
+    readingMinutes: 5,
+    tags: ["Chi phí", "Tokyo", "Sinh hoạt", "Giao thông"],
+    content: `
+<p>Tokyo là thành phố đắt đỏ nhưng có nhiều cách tiết kiệm. Dưới đây là chi phí cơ bản mà bạn cần biết.</p>
+<h2>Chi phí thuê nhà</h2>
+<p>Studio/1 phòng: 60,000–120,000 yen/tháng (trung bình khu vực). Shinjuku/Shibuya cao hơn 50%.</p>
+<h2>Ăn uống</h2>
+<p>Cơm chiên/ramen: 800–1,200 yen. Nhà hàng bình dân: 1,500–3,000 yen. Cửa hàng tiện lợi: 400–800 yen.</p>
+<h2>Giao thông công cộng</h2>
+<p>Vé tháng IC Card: 10,000–14,000 yen (tuỳ khu vực). Taxi rất đắt, tránh nếu có thể.</p>
+<h2>Giải trí</h2>
+<p>Vé xem phim: 1,800 yen. Quây bar: 1,000–3,000 yen/ly. Công viên: miễn phí–500 yen.</p>
+`,
+  },
+  {
+    slug: "beijing-shanghai-housing-guide",
+    lang: "zh",
+    title: "北京和上海房地产投资指南",
+    excerpt:
+      "中国一线城市房地产市场概览、投资机会和风险评估。",
+    category: "guide",
+    coverImage:
+      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-karolina-grabowska-8554832-scaled.jpg",
+    publishedAt: "2025-12-15",
+    readingMinutes: 8,
+    tags: ["投资", "中国", "北京", "上海"],
+    content: `
+<p>虽然我们主要专注日本，但许多投资者也对中国市场感兴趣。以下是对北京和上海市场的简要分析。</p>
+<h2>市场对比</h2>
+<p>北京：政治中心，增长稳定但政策限制多。上海：金融中心，流动性强但价格高。</p>
+<h2>投资回报</h2>
+<p>租金回报率通常为2-3%，低于日本。但长期升值潜力仍存在。</p>
+<h2>为什么日本更优</h2>
+<p>日本提供更高的租金回报（3-5%）、更透明的法律框架和更低的政策风险。</p>
+`,
+  },
+  {
+    slug: "forex-investment-timing",
+    lang: "zh",
+    title: "日元升贬与房产投资时机",
+    excerpt:
+      "了解汇率波动如何影响外国投资者的日本房产回报。",
+    category: "market",
+    coverImage:
+      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-karolina-grabowska-8554832-scaled.jpg",
+    publishedAt: "2025-11-10",
+    readingMinutes: 6,
+    tags: ["汇率", "日元", "投资时机", "风险管理"],
+    content: `
+<p>对外国投资者而言，汇率是影响实际回报率的重要因素。</p>
+<h2>日元弱化的优势</h2>
+<p>当日元贬值时，用美元或人民币购买日本房产变得更便宜。这是增加购买力的好时机。</p>
+<h2>汇兑风险管理</h2>
+<p>建议分批购入，而非一次性投入。这样可以平均购入成本。</p>
+<h2>长期投资优势</h2>
+<p>虽然短期汇率波动，但租金收入以日元计算稳定。长期而言，汇率风险趋于平衡。</p>
+`,
+  },
 ];
+

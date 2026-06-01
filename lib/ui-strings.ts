@@ -29,6 +29,7 @@ export type ContactFormStrings = {
 export type UIStrings = {
   // Blog list page
   blogPageTitle: string;
+  blogPageSubtitle: string;
   blogFilterAll: string;
   blogNoPosts: string;
   blogReadMore: string;
@@ -53,6 +54,7 @@ export type UIStrings = {
 export const uiStrings: Record<LanguageCode, UIStrings> = {
   ja: {
     blogPageTitle: "不動産コラム",
+    blogPageSubtitle: "日本不動産の最新トレンドと投資判断に役立つ情報を厳選してお届けします。",
     blogFilterAll: "すべて",
     blogNoPosts: "記事がありません",
     blogReadMore: "続きを読む",
@@ -103,6 +105,7 @@ export const uiStrings: Record<LanguageCode, UIStrings> = {
 
   en: {
     blogPageTitle: "Real Estate Blog",
+    blogPageSubtitle: "Insights and guidance on Japanese real estate, investment strategy, and market trends.",
     blogFilterAll: "All",
     blogNoPosts: "No posts found",
     blogReadMore: "Read more",
@@ -155,6 +158,7 @@ export const uiStrings: Record<LanguageCode, UIStrings> = {
 
   zh: {
     blogPageTitle: "房产专栏",
+    blogPageSubtitle: "为您精选日本不动产趋势、投资策略与实用指南。",
     blogFilterAll: "全部",
     blogNoPosts: "暂无文章",
     blogReadMore: "阅读更多",
@@ -205,6 +209,7 @@ export const uiStrings: Record<LanguageCode, UIStrings> = {
 
   vi: {
     blogPageTitle: "Blog Bất Động Sản",
+    blogPageSubtitle: "Cập nhật xu hướng thị trường, chiến lược đầu tư và kiến thức thực tiễn tại Nhật Bản.",
     blogFilterAll: "Tất cả",
     blogNoPosts: "Chưa có bài viết",
     blogReadMore: "Đọc thêm",

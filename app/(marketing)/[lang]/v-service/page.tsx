@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import ProxyClonePage from "@/components/shared/ProxyClonePage";
+import SplitPageWrapper from "@/components/shared/SplitPageWrapper";
 import { getSplitPageMetadata } from "../_lib/getSplitPageMetadata";
 import { getValidatedLang } from "../_lib/getValidatedLang";
 
@@ -14,5 +14,5 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function ServicePage({ params }: PageProps) {
   const lang = await getValidatedLang(params);
-  return <ProxyClonePage lang={lang} slug={["v-service"]} />;
+  return <SplitPageWrapper lang={lang} pageKey="v-service" />;
 }

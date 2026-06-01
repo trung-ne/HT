@@ -50,7 +50,7 @@ export default function ContactForm({ lang }: { lang: LanguageCode }) {
   if (submitted) {
     return (
       <div className="contact-form__success">
-        <div className="contact-form__success-icon">âœ“</div>
+        <div className="contact-form__success-icon">OK</div>
         <h3 className="contact-form__success-title">{t.successTitle}</h3>
         <p className="contact-form__success-body">{t.successBody}</p>
       </div>

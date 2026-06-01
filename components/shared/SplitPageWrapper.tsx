@@ -1,18 +1,18 @@
 "use client";
 
-import HomeHeader from "@/components/home/HomeHeader";
 import HomeFooter from "@/components/home/HomeFooter";
-import BlogListPage from "./BlogListPage";
+import HomeHeader from "@/components/home/HomeHeader";
 import { useHomePageState } from "@/hooks/useHomePageState";
 import type { LanguageCode } from "@/lib/i18n";
-import type { BlogPostMeta } from "@/features/blog/types";
+import SplitPage from "@/components/shared/SplitPage";
+import type { SplitPageKey } from "@/features/home/page-content";
 
-type BlogListWrapperProps = {
+type SplitPageWrapperProps = {
   lang: LanguageCode;
-  posts: BlogPostMeta[];
+  pageKey: SplitPageKey;
 };
 
-export default function BlogListWrapper({ lang, posts }: BlogListWrapperProps) {
+export default function SplitPageWrapper({ lang, pageKey }: SplitPageWrapperProps) {
   const {
     globalNav,
     footerItems,
@@ -31,9 +31,7 @@ export default function BlogListWrapper({ lang, posts }: BlogListWrapperProps) {
         globalNav={globalNav}
         onToggleMobileMenu={toggleMobileMenu}
       />
-      <main className="l-main blog-main">
-        <BlogListPage posts={posts} lang={lang} />
-      </main>
+      <SplitPage lang={lang} pageKey={pageKey} />
       <HomeFooter lang={lang} showPagetop={showPagetop} footerItems={footerItems} />
     </div>
   );

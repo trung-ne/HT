@@ -92,11 +92,6 @@ export function useHomePageState(lang: LanguageCode) {
   );
 
   useEffect(() => {
-    const originalOverflow = document.body.style.overflow;
-    if (showSplash) {
-      document.body.style.overflow = "hidden";
-    }
-
     const onScroll = () => {
       const over = window.scrollY > 100;
       setIsHeaderFixed(over);
@@ -123,9 +118,8 @@ export function useHomePageState(lang: LanguageCode) {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onResize);
       window.clearTimeout(splashTimer);
-      document.body.style.overflow = originalOverflow;
     };
-  }, [showSplash]);
+  }, []);
 
   return {
     t,

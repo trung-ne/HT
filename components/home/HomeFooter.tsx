@@ -14,17 +14,7 @@ type HomeFooterProps = {
   footerItems: FooterItem[];
 };
 
-const NAV_LINKS = [
-  { key: "HOME" },
-  { key: "SERVICE" },
-  { key: "BLOG" },
-  { key: "CONTACT" },
-] as const;
-
 export default function HomeFooter({ lang, showPagetop, footerItems }: HomeFooterProps) {
-  const navItems = footerItems.filter(
-    (item) => ["HOME", "SERVICE", "BLOG", "CONTACT"].includes(item.text) || item.text === footerItems[1]?.text
-  );
   const commerceItem = footerItems[footerItems.length - 1];
 
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import type { LanguageCode } from "@/lib/i18n";
 
 type NavItem = {
@@ -25,6 +25,7 @@ export default function HomeHeader({
   onToggleMobileMenu,
 }: HomeHeaderProps) {
   const pathname = usePathname();
+  const router = useRouter();
   const languages: LanguageCode[] = ["ja", "en", "zh", "vi"];
 
   const buildLanguageHref = (targetLang: LanguageCode) => {
@@ -51,15 +52,24 @@ export default function HomeHeader({
         </h1>
 
         <div className="language-switcher">
-          {languages.map((language) => (
-            <Link
-              key={language}
-              href={buildLanguageHref(language)}
-              className={language === lang ? "is-active" : ""}
-            >
-              {language.toUpperCase()}
-            </Link>
-          ))}
+          <label className="language-switcher__label" htmlFor="language-switcher">
+            Language
+          </label>
+          <select
+            id="language-switcher"
+            className="language-switcher__select"
+            value={lang}
+            onChange={(event) => {
+              router.push(buildLanguageHref(event.target.value as LanguageCode));
+            }}
+            aria-label="Select language"
+          >
+            {languages.map((language) => (
+              <option key={language} value={language}>
+                {language.toUpperCase()}
+              </option>
+            ))}
+          </select>
         </div>
 
         <a

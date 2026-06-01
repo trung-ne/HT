@@ -9,6 +9,8 @@ import { useT } from "@/lib/ui-strings";
 
 export default function ContactWrapper({ lang }: { lang: LanguageCode }) {
   const t = useT(lang);
+  const heroImage =
+    "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-roman-pohorecki-230557-1-scaled.jpg";
   const {
     globalNav,
     footerItems,
@@ -16,7 +18,7 @@ export default function ContactWrapper({ lang }: { lang: LanguageCode }) {
     isHeaderFixed,
     showPagetop,
     toggleMobileMenu,
-  } = useHomePageState(lang);
+  } = useHomePageState(lang, { enableSplash: false });
 
   return (
     <div id="site_wrap">
@@ -28,11 +30,20 @@ export default function ContactWrapper({ lang }: { lang: LanguageCode }) {
         onToggleMobileMenu={toggleMobileMenu}
       />
       <main className="l-main contact-main">
-        <div className="contact-page">
-          <div className="contact-page__header">
-            <h1 className="contact-page__title">{t.contactPageTitle}</h1>
-            <p className="contact-page__subtitle">{t.contactPageSubtitle}</p>
+        <div className="page-hero">
+          <div
+            className="page-hero__bg"
+            style={{ backgroundImage: `url(${heroImage})` }}
+          />
+          <div className="page-hero__overlay">
+            <div className="page-hero__inner">
+              <h1 className="page-hero__title">{t.contactPageTitle}</h1>
+              <p className="page-hero__subtitle">{t.contactPageSubtitle}</p>
+            </div>
           </div>
+        </div>
+
+        <div className="contact-page">
           <div className="contact-page__body">
             <ContactForm lang={lang} />
           </div>

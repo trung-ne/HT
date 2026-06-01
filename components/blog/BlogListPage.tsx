@@ -16,6 +16,9 @@ type BlogListPageProps = {
 export default function BlogListPage({ posts, lang }: BlogListPageProps) {
   const t = useT(lang);
   const [activeCategory, setActiveCategory] = useState<BlogCategory | "all">("all");
+  const heroImage =
+    posts[0]?.coverImage ??
+    "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-karolina-grabowska-8554832-scaled.jpg";
 
   const filtered =
     activeCategory === "all"
@@ -24,39 +27,50 @@ export default function BlogListPage({ posts, lang }: BlogListPageProps) {
 
   return (
     <div className="blog-list-page">
-      <div className="blog-list-page__header">
-        <h1 className="blog-list-page__title">{t.blogPageTitle}</h1>
-      </div>
-
-      <div className="blog-list-page__filters">
-        <button
-          className={`blog-filter-btn${activeCategory === "all" ? " blog-filter-btn--active" : ""}`}
-          onClick={() => setActiveCategory("all")}
-        >
-          {t.blogFilterAll}
-        </button>
-        {ALL_CATEGORIES.map((cat) => (
-          <button
-            key={cat}
-            className={`blog-filter-btn${activeCategory === cat ? " blog-filter-btn--active" : ""}`}
-            onClick={() => setActiveCategory(cat)}
-          >
-            {t.blogCategories[cat]}
-          </button>
-        ))}
-      </div>
-
-      {filtered.length === 0 ? (
-        <div className="blog-list-page__empty">
-          {t.blogNoPosts}
+      <div className="page-hero">
+        <div
+          className="page-hero__bg"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        />
+        <div className="page-hero__overlay">
+          <div className="page-hero__inner">
+            <h1 className="page-hero__title">{t.blogPageTitle}</h1>
+            <p className="page-hero__subtitle">{t.blogPageSubtitle}</p>
+          </div>
         </div>
-      ) : (
-        <div className="blog-list-page__grid">
-          {filtered.map((post) => (
-            <BlogCard key={`${post.lang}-${post.slug}`} post={post} lang={lang} />
+      </div>
+
+      <div className="blog-list-page__content">
+        <div className="blog-list-page__filters">
+          <button
+            className={`blog-filter-btn${activeCategory === "all" ? " blog-filter-btn--active" : ""}`}
+            onClick={() => setActiveCategory("all")}
+          >
+            {t.blogFilterAll}
+          </button>
+          {ALL_CATEGORIES.map((cat) => (
+            <button
+              key={cat}
+              className={`blog-filter-btn${activeCategory === cat ? " blog-filter-btn--active" : ""}`}
+              onClick={() => setActiveCategory(cat)}
+            >
+              {t.blogCategories[cat]}
+            </button>
           ))}
         </div>
-      )}
+
+        {filtered.length === 0 ? (
+          <div className="blog-list-page__empty">
+            {t.blogNoPosts}
+          </div>
+        ) : (
+          <div className="blog-list-page__grid">
+            {filtered.map((post) => (
+              <BlogCard key={`${post.lang}-${post.slug}`} post={post} lang={lang} />
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 }

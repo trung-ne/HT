@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from "next";
-import ProxyClonePage from "@/components/shared/ProxyClonePage";
+import BlogListWrapper from "@/components/blog/BlogListWrapper";
+import { getPostsByLang } from "@/features/blog/repository";
 import { getSplitPageMetadata } from "../_lib/getSplitPageMetadata";
 import { getValidatedLang } from "../_lib/getValidatedLang";
 
@@ -14,5 +15,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function BlogPage({ params }: PageProps) {
   const lang = await getValidatedLang(params);
-  return <ProxyClonePage lang={lang} slug={["blog"]} />;
+  const posts = getPostsByLang(lang);
+  return <BlogListWrapper lang={lang} posts={posts} />;
 }

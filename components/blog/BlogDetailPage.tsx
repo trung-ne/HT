@@ -15,14 +15,27 @@ export default function BlogDetailPage({ post, lang, related }: BlogDetailPagePr
   const t = useT(lang);
   const categoryLabel = t.blogCategories[post.category];
   const dateStr = formatDate(post.publishedAt, lang);
+  const heroImage = post.coverImage;
 
   return (
-    <div className="blog-detail-page">
-      <div className="blog-detail-page__back">
-        <Link href={`/${lang}/blog`}>{t.blogBackToList}</Link>
+    <div className="blog-detail-page-wrap">
+      <div className="page-hero page-hero--compact">
+        <div className="page-hero__bg" style={{ backgroundImage: `url(${heroImage})` }} />
+        <div className="page-hero__overlay">
+          <div className="page-hero__inner">
+            <p className="page-hero__eyebrow">BLOG</p>
+            <h1 className="page-hero__title">{post.title}</h1>
+            <p className="page-hero__subtitle">{post.excerpt}</p>
+          </div>
+        </div>
       </div>
 
-      <article className="blog-article">
+      <div className="blog-detail-page">
+        <div className="blog-detail-page__back">
+          <Link href={`/${lang}/blog`}>{t.blogBackToList}</Link>
+        </div>
+
+        <article className="blog-article">
         <header className="blog-article__header">
           <div className="blog-article__meta">
             <span className={`blog-card__category blog-card__category--${post.category}`}>
@@ -31,15 +44,8 @@ export default function BlogDetailPage({ post, lang, related }: BlogDetailPagePr
             <time dateTime={post.publishedAt}>{dateStr}</time>
             <span>{post.readingMinutes} min</span>
           </div>
-          <h1 className="blog-article__title">{post.title}</h1>
-          <p className="blog-article__excerpt">{post.excerpt}</p>
+          <h2 className="blog-article__title">{post.title}</h2>
         </header>
-
-        {post.coverImage && (
-          <div className="blog-article__cover">
-            <img src={post.coverImage} alt={post.title} />
-          </div>
-        )}
 
         <div
           className="blog-article__content"
@@ -55,18 +61,19 @@ export default function BlogDetailPage({ post, lang, related }: BlogDetailPagePr
             ))}
           </div>
         )}
-      </article>
+        </article>
 
-      {related.length > 0 && (
-        <section className="blog-related">
-          <h2 className="blog-related__title">{t.blogRelatedTitle}</h2>
-          <div className="blog-list-page__grid">
-            {related.map((p) => (
-              <BlogCard key={`${p.lang}-${p.slug}`} post={p} lang={lang} />
-            ))}
-          </div>
-        </section>
-      )}
+        {related.length > 0 && (
+          <section className="blog-related">
+            <h2 className="blog-related__title">{t.blogRelatedTitle}</h2>
+            <div className="blog-list-page__grid">
+              {related.map((p) => (
+                <BlogCard key={`${p.lang}-${p.slug}`} post={p} lang={lang} />
+              ))}
+            </div>
+          </section>
+        )}
+      </div>
     </div>
   );
 }
