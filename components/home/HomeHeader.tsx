@@ -60,8 +60,12 @@ export default function HomeHeader({
         {/* Logo */}
         <div className="l-header__brand">
           <Link href={`/${lang}`} className="l-header__logo-link">
-            <span className="l-header__logo-mark">HT</span>
-            <span className="l-header__logo-text">HTグローバル</span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/assets/red/logo.jpg"
+              alt="HT Global Holdings Co., Ltd. / 株式会社HTグローバル"
+              className="l-header__logo-image"
+            />
           </Link>
         </div>
 
