@@ -51,3 +51,4 @@ export default function HomeCompanyInfo({ lang, title, info }: HomeCompanyInfoPr
     </section>
   );
 }
+

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import type { LanguageCode } from "@/lib/i18n";
@@ -143,4 +143,5 @@ export default function ContactForm({ lang }: { lang: LanguageCode }) {
     </form>
   );
 }
+
 

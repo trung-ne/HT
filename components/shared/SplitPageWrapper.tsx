@@ -36,3 +36,4 @@ export default function SplitPageWrapper({ lang, pageKey }: SplitPageWrapperProp
     </div>
   );
 }
+

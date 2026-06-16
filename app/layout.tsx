@@ -5,10 +5,10 @@ import "./header-fixes.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://redhomes.com"),
   title: {
-    default: "redhomes",
+    default: "株式会社HTグローバル",
     template: "%s",
   },
-  description: "redhomes",
+  description: "株式会社HTグローバル | 日本不動産投資・仲介・賃貸管理",
 };
 
 export default function RootLayout({

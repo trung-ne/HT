@@ -10,7 +10,7 @@ import { useT } from "@/lib/ui-strings";
 export default function ContactWrapper({ lang }: { lang: LanguageCode }) {
   const t = useT(lang);
   const heroImage =
-    "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-roman-pohorecki-230557-1-scaled.jpg";
+    "/assets/red/pexels-roman-pohorecki-230557-1-scaled.jpg";
   const {
     globalNav,
     footerItems,
@@ -53,3 +53,4 @@ export default function ContactWrapper({ lang }: { lang: LanguageCode }) {
     </div>
   );
 }
+

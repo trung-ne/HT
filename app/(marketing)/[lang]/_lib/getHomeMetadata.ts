@@ -6,7 +6,7 @@ export function getHomeMetadata(lang: LanguageCode): Metadata {
   const t = translations[lang];
 
   return {
-    title: `redhomes | ${t.philosophyTitle}`,
+    title: `株式会社HTグローバル | ${t.philosophyTitle}`,
     description: t.splashDesc,
     alternates: {
       canonical: `/${lang}`,

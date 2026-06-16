@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 let f = fs.readFileSync('features/home/page-content.ts', 'utf8');
 
 const viBlock = `  vi: {
@@ -54,3 +54,4 @@ if (thStart === -1) { console.log('th block not found'); process.exit(1); }
 f = f.slice(0, thStart) + '\n' + viBlock;
 fs.writeFileSync('features/home/page-content.ts', f);
 console.log('page-content.ts done, length=' + f.length);
+

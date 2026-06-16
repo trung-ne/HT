@@ -8,22 +8,22 @@ const config: Config = {
   theme: {
     extend: {
       maxWidth: {
-        "site-inner": "1150px",
+        "site-inner": "1080px",
       },
       width: {
         "site-inner": "89.84375%",
       },
       height: {
-        "header-desktop": "70px",
+        "header-desktop": "80px",
         "header-mobile": "60px",
-        "main-image": "600px",
+        "main-image": "560px",
       },
       colors: {
-        primary: "#28abe2",
-        secondary: "#222222",
-        header: "rgba(40, 171, 226, 0.8)",
-        footer: "#eeeeee",
-        footerWidget: "#f6f6f6",
+        primary: "#023F73",    // Daiwa navy
+        gold: "#C8B536",       // Daiwa gold/olive
+        secondary: "#07121C",  // deep dark (body text)
+        footer: "#343D45",     // Daiwa footer bg
+        footerWidget: "#f4f6fb",
       },
       spacing: {
         "hero-link-min": "220px",

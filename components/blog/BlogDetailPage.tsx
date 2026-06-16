@@ -77,3 +77,4 @@ export default function BlogDetailPage({ post, lang, related }: BlogDetailPagePr
     </div>
   );
 }
+

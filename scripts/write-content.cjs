@@ -28,23 +28,23 @@ export const sectionImageMeta = [
     id: "cb_1",
     reverse: true,
     image:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-karolina-grabowska-8554832-scaled.jpg",
+      "/assets/red/pexels-karolina-grabowska-8554832-scaled.jpg",
   },
   {
     id: "cb_2",
     image:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-mart-production-7415041-scaled.jpg",
+      "/assets/red/pexels-mart-production-7415041-scaled.jpg",
   },
   {
     id: "cb_3",
     reverse: true,
     image:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-tomas-anunziata-3876407-1-scaled.jpg",
+      "/assets/red/pexels-tomas-anunziata-3876407-1-scaled.jpg",
   },
   {
     id: "cb_4",
     image:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-vanessa-garcia-6325982-scaled.jpg",
+      "/assets/red/pexels-vanessa-garcia-6325982-scaled.jpg",
   },
 ] as const;
 
@@ -364,3 +364,4 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
 
 fs.writeFileSync(path.join(base, 'features/home/page-content.ts'), pageContentTs, 'utf8');
 console.log('page-content.ts written');
+

@@ -11,17 +11,13 @@ import { type LanguageCode } from "@/lib/i18n";
 export default function RedhomesHome({ lang = "ja" }: { lang?: LanguageCode }) {
   const {
     t,
-    heroItems,
-    mainSections,
     globalNav,
     footerItems,
-    activeHero,
     isMobileMenuOpen,
     isHeaderFixed,
     showPagetop,
     showSplash,
     splashFading,
-    setActiveHero,
     toggleMobileMenu,
   } = useHomePageState(lang);
 
@@ -38,19 +34,10 @@ export default function RedhomesHome({ lang = "ja" }: { lang?: LanguageCode }) {
           onToggleMobileMenu={toggleMobileMenu}
         />
 
-        <main className="l-main">
-          <HomeHero
-            heroItems={heroItems}
-            activeHero={activeHero}
-            isHeaderFixed={isHeaderFixed}
-            onSetActiveHero={setActiveHero}
-          />
+        <main className="l-main" style={{ paddingTop: 0 }}>
+          <HomeHero lang={lang} />
 
-          <HomeContent
-            philosophyTitle={t.philosophyTitle}
-            philosophyDesc={t.philosophyDesc}
-            mainSections={mainSections}
-          />
+          <HomeContent lang={lang} />
         </main>
 
         <HomeFooter
@@ -62,3 +49,4 @@ export default function RedhomesHome({ lang = "ja" }: { lang?: LanguageCode }) {
     </>
   );
 }
+

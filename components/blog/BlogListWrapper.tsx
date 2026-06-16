@@ -38,3 +38,4 @@ export default function BlogListWrapper({ lang, posts }: BlogListWrapperProps) {
     </div>
   );
 }
+

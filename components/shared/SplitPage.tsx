@@ -1,4 +1,4 @@
-﻿import { splitPageContent, type SplitPageKey } from "@/features/home/page-content";
+import { splitPageContent, type SplitPageKey } from "@/features/home/page-content";
 import type { LanguageCode } from "@/lib/i18n";
 
 type SplitPageProps = {
@@ -74,3 +74,4 @@ export default function SplitPage({ lang, pageKey }: SplitPageProps) {
     </main>
   );
 }
+

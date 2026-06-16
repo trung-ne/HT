@@ -4,9 +4,17 @@ import { useEffect, useMemo, useState } from "react";
 import { sectionImageMeta, translations, type MainImageSection } from "@/features/home/content";
 import { type LanguageCode, withLang } from "@/lib/i18n";
 
+const NAV_LABELS: Record<string, { home: string; service: string; about: string; domestic: string; blog: string; overseas: string; contact: string }> = {
+  ja: { home: "ホーム", service: "事業内容", about: "会社案内", domestic: "国内不動産", blog: "BLOG", overseas: "海外不動産", contact: "お問合せ" },
+  en: { home: "Home", service: "Services", about: "About", domestic: "Domestic RE", blog: "Blog", overseas: "Overseas", contact: "Contact" },
+  zh: { home: "首页", service: "业务内容", about: "关于我们", domestic: "国内房产", blog: "博客", overseas: "海外不動産", contact: "联系我们" },
+  vi: { home: "Trang chủ", service: "Dịch vụ", about: "Giới thiệu", domestic: "BĐS trong nước", blog: "Blog", overseas: "Bất động sản nước ngoài", contact: "Liên hệ" },
+};
+
 type NavItem = {
   label: string;
   href: string;
+  children?: { label: string; href: string }[];
 };
 
 type FooterItem = {
@@ -14,7 +22,7 @@ type FooterItem = {
   href: string;
 };
 
-export function useHomePageState(lang: LanguageCode) {
+export function useHomePageState(lang: LanguageCode, _options?: { enableSplash?: boolean }) {
   const [activeHero, setActiveHero] = useState("content1");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
@@ -31,28 +39,28 @@ export function useHomePageState(lang: LanguageCode) {
         href: withLang(lang, "/v-about"),
         target: "content1",
         image:
-          "http://molaholdings.com/jp/wp/wp-content/uploads/2016/10/s_shutterstock_475080787-min.jpg",
+          "/assets/red/s_shutterstock_475080787-min.jpg",
       },
       {
         title: "SERVICE",
         href: withLang(lang, "/v-service"),
         target: "content2",
         image:
-          "http://molaholdings.com/jp/wp/wp-content/uploads/2016/10/s_shutterstock_267766277-min.jpg",
+          "/assets/red/s_shutterstock_267766277-min.jpg",
       },
       {
         title: "BLOG",
         href: withLang(lang, "/blog"),
         target: "content3",
         image:
-          "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-max-vakhtbovych-7060815-scaled.jpg",
+          "/assets/red/pexels-max-vakhtbovych-7060815-scaled.jpg",
       },
       {
         title: "CONTACT",
         href: withLang(lang, "/contact"),
         target: "content4",
         image:
-          "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-roman-pohorecki-230557-1-scaled.jpg",
+          "/assets/red/pexels-roman-pohorecki-230557-1-scaled.jpg",
       },
     ],
     [lang, t.navAbout],
@@ -68,27 +76,40 @@ export function useHomePageState(lang: LanguageCode) {
     [t.sections],
   );
 
+  const nl = NAV_LABELS[lang] ?? NAV_LABELS.ja;
+
   const globalNav: NavItem[] = useMemo(
     () => [
-      { label: "HOME", href: withLang(lang, "/") },
-      { label: t.navAbout, href: withLang(lang, "/v-about") },
-      { label: "SERVICE", href: withLang(lang, "/v-service") },
-      { label: "BLOG", href: withLang(lang, "/blog") },
-      { label: "CONTACT", href: withLang(lang, "/contact") },
+      { label: nl.home, href: withLang(lang, "/") },
+      { label: nl.service, href: withLang(lang, "/v-service") },
+      { label: nl.about, href: withLang(lang, "/v-about") },
+      { label: nl.domestic, href: withLang(lang, "/domestic") },
+      {
+        label: nl.overseas,
+        href: withLang(lang, "/vietnam/projects"),
+        children: [
+          {
+            label: lang === "ja" ? "ベトナム" : lang === "zh" ? "越南" : lang === "vi" ? "Việt Nam" : "Vietnam",
+            href: withLang(lang, "/vietnam/projects"),
+          },
+        ],
+      },
     ],
-    [lang, t.navAbout],
+    [lang, nl],
   );
 
   const footerItems: FooterItem[] = useMemo(
     () => [
-      { text: "HOME", href: withLang(lang, "/") },
-      { text: t.navAbout, href: withLang(lang, "/v-about") },
-      { text: "SERVICE", href: withLang(lang, "/v-service") },
-      { text: "BLOG", href: withLang(lang, "/blog") },
-      { text: "CONTACT", href: withLang(lang, "/contact") },
+      { text: nl.home, href: withLang(lang, "/") },
+      { text: nl.about, href: withLang(lang, "/v-about") },
+      { text: nl.service, href: withLang(lang, "/v-service") },
+      { text: nl.domestic, href: withLang(lang, "/domestic") },
+      { text: nl.blog, href: withLang(lang, "/blog") },
+      { text: nl.contact, href: withLang(lang, "/contact") },
       { text: t.footerCommerce, href: withLang(lang, "/cdmmr") },
+      { text: nl.overseas, href: withLang(lang, "/vietnam/projects") },
     ],
-    [lang, t.footerCommerce, t.navAbout],
+    [lang, nl, t.footerCommerce],
   );
 
   useEffect(() => {
@@ -103,8 +124,8 @@ export function useHomePageState(lang: LanguageCode) {
 
     const splashTimer = window.setTimeout(() => {
       setSplashFading(true);
-      window.setTimeout(() => setShowSplash(false), 800);
-    }, 6500);
+      window.setTimeout(() => setShowSplash(false), 600);
+    }, 3600);
 
     const onResize = () => {
       if (window.innerWidth > 1024) {

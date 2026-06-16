@@ -1,18 +1,12 @@
-import type { Metadata } from "next";
-import SplitPageWrapper from "@/components/shared/SplitPageWrapper";
-import { getSplitPageMetadata } from "../_lib/getSplitPageMetadata";
+import BusinessPage from "@/components/pages/BusinessPage";
+import PageWrapper from "@/components/shared/PageWrapper";
 import { getValidatedLang } from "../_lib/getValidatedLang";
 
-type PageProps = {
-  params: Promise<{ lang: string }>;
-};
-
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export default async function ServicePage({ params }: { params: Promise<{ lang: string }> }) {
   const lang = await getValidatedLang(params);
-  return getSplitPageMetadata(lang, "v-service");
-}
-
-export default async function ServicePage({ params }: PageProps) {
-  const lang = await getValidatedLang(params);
-  return <SplitPageWrapper lang={lang} pageKey="v-service" />;
+  return (
+    <PageWrapper lang={lang}>
+      <BusinessPage lang={lang} />
+    </PageWrapper>
+  );
 }

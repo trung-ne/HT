@@ -18,7 +18,7 @@ export default function BlogListPage({ posts, lang }: BlogListPageProps) {
   const [activeCategory, setActiveCategory] = useState<BlogCategory | "all">("all");
   const heroImage =
     posts[0]?.coverImage ??
-    "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-karolina-grabowska-8554832-scaled.jpg";
+    "/assets/red/pexels-karolina-grabowska-8554832-scaled.jpg";
 
   const filtered =
     activeCategory === "all"
@@ -74,3 +74,4 @@ export default function BlogListPage({ posts, lang }: BlogListPageProps) {
     </div>
   );
 }
+

@@ -21,3 +21,4 @@ export type BlogPost = {
 };
 
 export type BlogPostMeta = Omit<BlogPost, "content">;
+

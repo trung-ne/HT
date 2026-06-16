@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 
 // 1. Update i18n/request.ts
 let f = fs.readFileSync('i18n/request.ts', 'utf8');
@@ -54,3 +54,4 @@ if (thStart === -1) { console.log('th block not found!'); process.exit(1); }
 f = f.slice(0, thStart) + '\n' + viBlock + f.slice(thEnd);
 fs.writeFileSync('features/home/content.ts', f);
 console.log('content.ts done');
+

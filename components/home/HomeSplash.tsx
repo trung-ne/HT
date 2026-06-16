@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 type HomeSplashProps = {
   showSplash: boolean;
@@ -17,15 +17,15 @@ export default function HomeSplash({ showSplash, splashFading, splashDesc }: Hom
         className="p-splash__img p-splash__img--home"
         style={{
           backgroundImage:
-            "url(http://molaholdings.com/jp/wp/wp-content/uploads/2016/10/s_shutterstock_374002921-min.jpg)",
+            "url(/assets/red/s_shutterstock_374002921-min.jpg)",
         }}
       />
       <div className="p-splash__inner l-inner">
         <div className="p-splash__catch">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo.svg"
-            alt="redhomes"
+            src="/assets/red/logo.jpg"
+            alt="????HT?????"
             style={{ height: 100, width: "auto" }}
           />
         </div>

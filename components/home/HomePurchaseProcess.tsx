@@ -31,3 +31,4 @@ export default function HomePurchaseProcess({ title, steps }: HomePurchaseProces
     </section>
   );
 }
+

@@ -10,7 +10,7 @@ export const allPosts: BlogPost[] = [
       "日本の不動産市場は、安定したキャッシュフロー・低金利・透明な法制度という三拍子が揃った希少な投資先です。",
     category: "investment",
     coverImage:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-karolina-grabowska-8554832-scaled.jpg",
+      "/assets/red/pexels-karolina-grabowska-8554832-scaled.jpg",
     publishedAt: "2026-04-01",
     readingMinutes: 5,
     tags: ["投資", "日本不動産", "市場分析"],
@@ -20,7 +20,7 @@ export const allPosts: BlogPost[] = [
 <p>東京は世界最大の都市圏のひとつであり、人口集中が継続しています。特に23区内のワンルームマンションは、海外投資家に人気の高いアセットクラスです。</p>
 <h2>利回りの実態</h2>
 <p>表面利回りは平均3〜5%、実質利回りは管理費・税金を差し引いても2〜4%程度を維持しています。これはシンガポールや香港と比較しても競争力があります。</p>
-<h2>redhomesが提供するサポート</h2>
+<h2>株式会社HTグローバルが提供するサポート</h2>
 <p>物件選定から購入契約、賃貸管理、確定申告サポートまで、ワンストップで対応します。まずはお気軽にお問い合わせください。</p>
 `,
   },
@@ -32,7 +32,7 @@ export const allPosts: BlogPost[] = [
       "非居住者でも日本の不動産は購入できます。手続きの流れと注意点を分かりやすく解説します。",
     category: "guide",
     coverImage:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-mart-production-7415041-scaled.jpg",
+      "/assets/red/pexels-mart-production-7415041-scaled.jpg",
     publishedAt: "2026-03-15",
     readingMinutes: 8,
     tags: ["購入ガイド", "マンション", "海外居住者"],
@@ -47,7 +47,7 @@ export const allPosts: BlogPost[] = [
   <li>残代金決済・所有権移転登記</li>
 </ol>
 <h2>必要書類</h2>
-<p>パスポート、在留資格証明、資金証明（銀行残高証明）などが必要です。redhomesが書類準備をサポートします。</p>
+<p>パスポート、在留資格証明、資金証明（銀行残高証明）などが必要です。株式会社HTグローバルが書類準備をサポートします。</p>
 `,
   },
 
@@ -60,7 +60,7 @@ export const allPosts: BlogPost[] = [
       "Japan offers a rare trifecta for global investors: stable cash flow, transparent regulation, and long-term value preservation.",
     category: "investment",
     coverImage:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-karolina-grabowska-8554832-scaled.jpg",
+      "/assets/red/pexels-karolina-grabowska-8554832-scaled.jpg",
     publishedAt: "2026-04-01",
     readingMinutes: 5,
     tags: ["Investment", "Japan", "Market Analysis"],
@@ -70,7 +70,7 @@ export const allPosts: BlogPost[] = [
 <p>Tokyo remains one of the world's largest metropolitan areas with sustained population concentration. Studio condominiums in the 23 wards are among the most popular assets for overseas investors.</p>
 <h2>Real Yield Figures</h2>
 <p>Gross yields average 3–5%, with net yields of 2–4% after management fees and taxes — highly competitive compared to Singapore or Hong Kong.</p>
-<h2>How redhomes Supports You</h2>
+<h2>How 株式会社HTグローバル Supports You</h2>
 <p>From property selection to purchase contracts, rental management, and tax filing — we handle everything end-to-end. Get in touch to start your journey.</p>
 `,
   },
@@ -82,7 +82,7 @@ export const allPosts: BlogPost[] = [
       "A clear breakdown of fixed asset tax, city planning tax, and income tax on rental revenue — everything you need to know.",
     category: "legal",
     coverImage:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-max-vakhtbovych-7060815-scaled.jpg",
+      "/assets/red/pexels-max-vakhtbovych-7060815-scaled.jpg",
     publishedAt: "2026-02-20",
     readingMinutes: 6,
     tags: ["Tax", "Legal", "Foreign Investors"],
@@ -108,7 +108,7 @@ export const allPosts: BlogPost[] = [
       "日本为全球投资者提供了难得的三重优势：稳定的现金流、透明的法规体系和长期保值能力。",
     category: "investment",
     coverImage:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-karolina-grabowska-8554832-scaled.jpg",
+      "/assets/red/pexels-karolina-grabowska-8554832-scaled.jpg",
     publishedAt: "2026-04-01",
     readingMinutes: 5,
     tags: ["投资", "日本", "市场分析"],
@@ -118,7 +118,7 @@ export const allPosts: BlogPost[] = [
 <p>东京仍是全球最大的都市圈之一，人口持续集中。23区内的单室公寓是海外投资者最受欢迎的资产类别之一。</p>
 <h2>实际收益</h2>
 <p>毛收益率平均3–5%，扣除管理费和税费后净收益率为2–4%，与新加坡或香港相比极具竞争力。</p>
-<h2>redhomes 如何支持您</h2>
+<h2>株式会社HTグローバル 如何支持您</h2>
 <p>从选房、签约、租赁管理到税务申报，我们提供一站式全程服务。立即联系我们，开启您的投资之旅。</p>
 `,
   },
@@ -132,7 +132,7 @@ export const allPosts: BlogPost[] = [
       "Nhật Bản mang đến bộ ba hiếm có cho nhà đầu tư toàn cầu: dòng tiền ổn định, pháp lý minh bạch và bảo toàn giá trị dài hạn.",
     category: "investment",
     coverImage:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-karolina-grabowska-8554832-scaled.jpg",
+      "/assets/red/pexels-karolina-grabowska-8554832-scaled.jpg",
     publishedAt: "2026-04-01",
     readingMinutes: 5,
     tags: ["Đầu tư", "Nhật Bản", "Phân tích thị trường"],
@@ -142,7 +142,7 @@ export const allPosts: BlogPost[] = [
 <p>Tokyo vẫn là một trong những vùng đô thị lớn nhất thế giới với dân số tập trung bền vững. Căn hộ studio trong 23 quận là loại tài sản phổ biến nhất với nhà đầu tư nước ngoài.</p>
 <h2>Lợi suất thực tế</h2>
 <p>Lợi suất gộp trung bình 3–5%, lợi suất ròng sau phí quản lý và thuế đạt 2–4% — rất cạnh tranh so với Singapore hay Hong Kong.</p>
-<h2>redhomes hỗ trợ bạn như thế nào</h2>
+<h2>株式会社HTグローバル hỗ trợ bạn như thế nào</h2>
 <p>Từ chọn bất động sản, ký hợp đồng, quản lý cho thuê đến khai thuế — chúng tôi xử lý toàn bộ quy trình. Liên hệ ngay để bắt đầu.</p>
 `,
   },
@@ -154,7 +154,7 @@ export const allPosts: BlogPost[] = [
       "Người không cư trú vẫn có thể mua bất động sản tại Nhật Bản. Chúng tôi hướng dẫn từng bước quy trình và những điểm cần lưu ý.",
     category: "guide",
     coverImage:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-mart-production-7415041-scaled.jpg",
+      "/assets/red/pexels-mart-production-7415041-scaled.jpg",
     publishedAt: "2026-03-15",
     readingMinutes: 8,
     tags: ["Hướng dẫn", "Căn hộ", "Người nước ngoài"],
@@ -169,7 +169,7 @@ export const allPosts: BlogPost[] = [
   <li>Thanh toán số dư & chuyển nhượng quyền sở hữu</li>
 </ol>
 <h2>Giấy tờ cần thiết</h2>
-<p>Hộ chiếu, chứng minh tài chính (sao kê ngân hàng) và các giấy tờ liên quan. redhomes hỗ trợ chuẩn bị toàn bộ hồ sơ.</p>
+<p>Hộ chiếu, chứng minh tài chính (sao kê ngân hàng) và các giấy tờ liên quan. 株式会社HTグローバル hỗ trợ chuẩn bị toàn bộ hồ sơ.</p>
 `,
   },
   {
@@ -180,7 +180,7 @@ export const allPosts: BlogPost[] = [
       "Latest insights on Tokyo's residential market: price movements, emerging neighborhoods, and what to expect in the coming year.",
     category: "market",
     coverImage:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-karolina-grabowska-8554832-scaled.jpg",
+      "/assets/red/pexels-karolina-grabowska-8554832-scaled.jpg",
     publishedAt: "2026-01-15",
     readingMinutes: 7,
     tags: ["Market", "Tokyo", "Trends", "2026"],
@@ -204,7 +204,7 @@ export const allPosts: BlogPost[] = [
       "Practical advice on property maintenance, tenant screening, communication with management companies, and legal obligations.",
     category: "guide",
     coverImage:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-max-vakhtbovych-7060815-scaled.jpg",
+      "/assets/red/pexels-max-vakhtbovych-7060815-scaled.jpg",
     publishedAt: "2026-01-05",
     readingMinutes: 9,
     tags: ["Management", "Rental", "Non-Resident", "Legal"],
@@ -213,7 +213,7 @@ export const allPosts: BlogPost[] = [
 <h2>Hire a Property Management Company</h2>
 <p>Most foreign landlords engage a licensed management company (kanri kaisha). They handle rent collection, maintenance coordination, and tenant communication.</p>
 <h2>Legal Obligations</h2>
-<p>File a tax return annually, maintain building records, and ensure property insurance is current. redhomes can assist with compliance.</p>
+<p>File a tax return annually, maintain building records, and ensure property insurance is current. 株式会社HTグローバル can assist with compliance.</p>
 <h2>Tenant Screening</h2>
 <p>Japanese management companies typically guarantee quality tenants through strict vetting and require guarantor co-signatures.</p>
 <h2>Maintenance Budget</h2>
@@ -228,7 +228,7 @@ export const allPosts: BlogPost[] = [
       "So sánh tiện nghi, chi phí sinh hoạt, giao thông và cộng đồng du học sinh ở các khu vực phổ biến.",
     category: "guide",
     coverImage:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-marcus-herzberg-887753-scaled.jpg",
+      "/assets/red/pexels-marcus-herzberg-887753-scaled.jpg",
     publishedAt: "2025-02-10",
     readingMinutes: 6,
     tags: ["Du học", "Tokyo", "Khu vực sống", "Chi phí"],
@@ -252,7 +252,7 @@ export const allPosts: BlogPost[] = [
       "Tất cả những gì bạn cần biết để thuê căn hộ tại Tokyo, từ tìm kiếm đến ký hợp đồng.",
     category: "guide",
     coverImage:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-max-vakhtbovych-7060815-scaled.jpg",
+      "/assets/red/pexels-max-vakhtbovych-7060815-scaled.jpg",
     publishedAt: "2025-02-01",
     readingMinutes: 7,
     tags: ["Thuê nhà", "Tokyo", "Hướng dẫn", "Chi phí"],
@@ -274,7 +274,7 @@ export const allPosts: BlogPost[] = [
       "Cập nhật chi phí thuê nhà, ăn uống, giao thông công cộng và giải trí ở Tokyo.",
     category: "market",
     coverImage:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-mart-production-7415041-scaled.jpg",
+      "/assets/red/pexels-mart-production-7415041-scaled.jpg",
     publishedAt: "2025-01-20",
     readingMinutes: 5,
     tags: ["Chi phí", "Tokyo", "Sinh hoạt", "Giao thông"],
@@ -298,7 +298,7 @@ export const allPosts: BlogPost[] = [
       "中国一线城市房地产市场概览、投资机会和风险评估。",
     category: "guide",
     coverImage:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-karolina-grabowska-8554832-scaled.jpg",
+      "/assets/red/pexels-karolina-grabowska-8554832-scaled.jpg",
     publishedAt: "2025-12-15",
     readingMinutes: 8,
     tags: ["投资", "中国", "北京", "上海"],
@@ -320,7 +320,7 @@ export const allPosts: BlogPost[] = [
       "了解汇率波动如何影响外国投资者的日本房产回报。",
     category: "market",
     coverImage:
-      "http://molaholdings.com/jp/wp/wp-content/uploads/2021/08/pexels-karolina-grabowska-8554832-scaled.jpg",
+      "/assets/red/pexels-karolina-grabowska-8554832-scaled.jpg",
     publishedAt: "2025-11-10",
     readingMinutes: 6,
     tags: ["汇率", "日元", "投资时机", "风险管理"],
@@ -335,4 +335,5 @@ export const allPosts: BlogPost[] = [
 `,
   },
 ];
+
 

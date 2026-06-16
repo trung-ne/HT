@@ -7,7 +7,7 @@ export function getSplitPageMetadata(lang: LanguageCode, pageKey: SplitPageKey):
   const description = content.paragraphs[0] ?? content.title;
 
   return {
-    title: `${content.title} | redhomes`,
+    title: `${content.title} | 株式会社HTグローバル`,
     description,
     alternates: {
       canonical: `/${lang}/${pageKey}`,

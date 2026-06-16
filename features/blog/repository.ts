@@ -82,3 +82,4 @@ export function formatDate(isoDate: string, lang: LanguageCode): string {
     day: "numeric",
   });
 }
+

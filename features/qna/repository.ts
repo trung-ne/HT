@@ -30,3 +30,4 @@ export function searchQnAs(query: string, lang: LanguageCode): QnAItem[] {
       q.answer.toLowerCase().includes(lowerQuery),
   );
 }
+

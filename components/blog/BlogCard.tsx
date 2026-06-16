@@ -50,3 +50,4 @@ export default function BlogCard({ post, lang }: BlogCardProps) {
     </article>
   );
 }
+

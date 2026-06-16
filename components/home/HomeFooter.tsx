@@ -37,7 +37,7 @@ export default function HomeFooter({ lang, showPagetop, footerItems }: HomeFoote
           {/* Brand column */}
           <div className="footer-brand">
             <Link href={withLang(lang, "/")} className="redhome-logo-link footer-brand__logo">
-              redhomes
+              HTグローバル
             </Link>
             <p className="footer-brand__tagline">
               Japanese Real Estate for Global Investors
@@ -72,7 +72,7 @@ export default function HomeFooter({ lang, showPagetop, footerItems }: HomeFoote
       <div className="footer-bottom">
         <div className="l-inner footer-bottom__inner">
           <p className="p-copyright">
-            <small>© {new Date().getFullYear()} redhomes. All rights reserved.</small>
+            <small>© {new Date().getFullYear()} 株式会社HTグローバル. All rights reserved.</small>
           </p>
           {commerceItem && (
             <Link href={commerceItem.href} className="footer-bottom__commerce">
@@ -84,3 +84,4 @@ export default function HomeFooter({ lang, showPagetop, footerItems }: HomeFoote
     </footer>
   );
 }
+

@@ -10,3 +10,4 @@ export type QnAItem = {
 };
 
 export type QnACategory = "investment" | "legal" | "process" | "general";
+

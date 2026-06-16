@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: QnAPageProps): Promise<Metada
   };
 
   return {
-    title: `${heroTitles[lang]} | redhomes`,
+    title: `${heroTitles[lang]} | 株式会社HTグローバル`,
     description: descriptions[lang],
   };
 }
