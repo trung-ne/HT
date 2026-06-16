@@ -25,7 +25,7 @@ export default function HomeSplash({ showSplash, splashFading, splashDesc }: Hom
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/assets/red/logo.jpg"
-            alt="????HT?????"
+            alt="HT Global Holdings Co., Ltd. / 株式会社HTグローバル logo"
             style={{ height: 100, width: "auto" }}
           />
         </div>
