@@ -67,8 +67,8 @@ export default function HomeFooter({ lang, showPagetop, footerItems }: HomeFoote
           {/* Contact column */}
           <div className="footer-contact">
             <p className="footer-contact__label">Contact</p>
-            <a href="mailto:info@redhomes.jp" className="footer-contact__email">
-              info@redhomes.jp
+            <a href="mailto:ht.global.info1@gmail.com" className="footer-contact__email">
+              ht.global.info1@gmail.com
             </a>
             <p className="footer-contact__location">Tokyo, Japan</p>
           </div>
