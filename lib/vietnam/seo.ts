@@ -90,12 +90,12 @@ export function organizationJsonLd() {
     "@type": "RealEstateAgent",
     "@id": `${siteConfig.baseUrl}/#organization`,
     name: siteConfig.company.name,
-    alternateName: "Onsen Fuji",
+    alternateName: "株式会社HTグローバル",
     url: siteConfig.baseUrl,
     address: siteConfig.company.address,
     inLanguage: ["ja-JP", "vi-VN", "zh-CN", "zh-TW", "en"],
     areaServed: ["Japan", "China", "Taiwan", "Vietnam"],
-    brand: "Onsen Fuji",
+    brand: "HT Global",
   };
 }
 

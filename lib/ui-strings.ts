@@ -54,7 +54,7 @@ export type UIStrings = {
 export const uiStrings: Record<LanguageCode, UIStrings> = {
   ja: {
     blogPageTitle: "不動産コラム",
-    blogPageSubtitle: "日本不動産の最新トレンドと投資判断に役立つ情報を厳選してお届けします。",
+    blogPageSubtitle: "日本不動産の売買・仲介・賃貸管理・海外投資に役立つ実践情報を厳選してお届けします。",
     blogFilterAll: "すべて",
     blogNoPosts: "記事がありません",
     blogReadMore: "続きを読む",
@@ -105,7 +105,7 @@ export const uiStrings: Record<LanguageCode, UIStrings> = {
 
   en: {
     blogPageTitle: "Real Estate Blog",
-    blogPageSubtitle: "Insights and guidance on Japanese real estate, investment strategy, and market trends.",
+    blogPageSubtitle: "Practical insights on Japanese real estate sales, brokerage, rental management, and overseas-investor strategies.",
     blogFilterAll: "All",
     blogNoPosts: "No posts found",
     blogReadMore: "Read more",
@@ -158,7 +158,7 @@ export const uiStrings: Record<LanguageCode, UIStrings> = {
 
   zh: {
     blogPageTitle: "房产专栏",
-    blogPageSubtitle: "为您精选日本不动产趋势、投资策略与实用指南。",
+    blogPageSubtitle: "精选日本不动产买卖、中介、出租管理与海外投资实用指南。",
     blogFilterAll: "全部",
     blogNoPosts: "暂无文章",
     blogReadMore: "阅读更多",
@@ -209,7 +209,7 @@ export const uiStrings: Record<LanguageCode, UIStrings> = {
 
   vi: {
     blogPageTitle: "Blog Bất Động Sản",
-    blogPageSubtitle: "Cập nhật xu hướng thị trường, chiến lược đầu tư và kiến thức thực tiễn tại Nhật Bản.",
+    blogPageSubtitle: "Chia sẻ kiến thức thực tế về mua bán, môi giới, quản lý cho thuê và đầu tư bất động sản Nhật Bản cho nhà đầu tư nước ngoài.",
     blogFilterAll: "Tất cả",
     blogNoPosts: "Chưa có bài viết",
     blogReadMore: "Đọc thêm",

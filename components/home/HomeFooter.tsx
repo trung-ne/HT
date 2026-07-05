@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { withLang, type LanguageCode } from "@/lib/i18n";
 
@@ -37,7 +38,13 @@ export default function HomeFooter({ lang, showPagetop, footerItems }: HomeFoote
           {/* Brand column */}
           <div className="footer-brand">
             <Link href={withLang(lang, "/")} className="redhome-logo-link footer-brand__logo">
-              HTグローバル
+              <Image
+                src="/assets/red/logo.jpg"
+                alt="HTグローバル"
+                width={180}
+                height={56}
+                style={{ height: 56, width: "auto", objectFit: "contain" }}
+              />
             </Link>
             <p className="footer-brand__tagline">
               Japanese Real Estate for Global Investors

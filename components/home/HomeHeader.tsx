@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
@@ -60,8 +61,14 @@ export default function HomeHeader({
         {/* Logo */}
         <div className="l-header__brand">
           <Link href={`/${lang}`} className="l-header__logo-link">
-            <span className="l-header__logo-mark">HT</span>
-            <span className="l-header__logo-text">HTグローバル</span>
+            <Image
+              src="/assets/red/logo.jpg"
+              alt="HTグローバル"
+              width={180}
+              height={56}
+              priority
+              style={{ height: 56, width: "auto", objectFit: "contain" }}
+            />
           </Link>
         </div>
 

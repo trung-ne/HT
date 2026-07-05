@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Globe, Mail, MapPin, Phone } from "lucide-react";
 import { LeadForm } from "@/components/vietnam/lead-form";
 import { SectionHeading } from "@/components/vietnam/section-heading";
 import { Card, CardContent } from "@/components/vietnam/ui/card";
@@ -32,8 +32,10 @@ export default async function VietnamContactPage({ params }: Params) {
           <Card className="rounded-lg shadow-none">
             <CardContent className="grid gap-4 p-6 text-sm text-[var(--onsen-muted)]">
               <div className="flex gap-3"><MapPin className="h-5 w-5 text-[var(--onsen-orange)]" />{siteConfig.company.address}</div>
-              <div className="flex gap-3"><Mail className="h-5 w-5 text-[var(--onsen-orange)]" />{siteConfig.company.website}</div>
-              <div className="flex gap-3"><Phone className="h-5 w-5 text-[var(--onsen-orange)]" />{t(uiCopy.contact.phoneDesk, locale)}</div>
+              <div className="flex gap-3"><Phone className="h-5 w-5 text-[var(--onsen-orange)]" />TEL: {siteConfig.company.phone} / FAX: {siteConfig.company.fax}</div>
+              <div className="flex gap-3"><Phone className="h-5 w-5 text-[var(--onsen-orange)]" />Mobile: {siteConfig.company.mobile}</div>
+              <div className="flex gap-3"><Mail className="h-5 w-5 text-[var(--onsen-orange)]" />{siteConfig.company.email}</div>
+              <div className="flex gap-3"><Globe className="h-5 w-5 text-[var(--onsen-orange)]" />{siteConfig.company.website.replace(/^https?:\/\//, "")}</div>
             </CardContent>
           </Card>
           <div className="min-h-72 rounded-lg border border-[var(--onsen-line)] bg-neutral-100 p-6">

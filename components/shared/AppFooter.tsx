@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 
 type AppFooterProps = {
@@ -20,9 +21,15 @@ export function AppFooter({ lang }: AppFooterProps) {
             <Link
               href={`/${lang}`}
               className="redhome-logo-link"
-              style={{ fontSize: "22px", fontWeight: 700, color: "#fff", letterSpacing: "0.04em", textDecoration: "none" }}
+              style={{ display: "inline-flex", textDecoration: "none" }}
             >
-              HTグローバル
+              <Image
+                src="/assets/red/logo.jpg"
+                alt="HTグローバル"
+                width={180}
+                height={56}
+                style={{ height: 56, width: "auto", objectFit: "contain" }}
+              />
             </Link>
             <p style={{ marginTop: "8px", fontSize: "12px", color: "#9aa0a6", letterSpacing: "0.04em" }}>
               Japanese Real Estate for Global Investors

@@ -69,7 +69,7 @@ const T: Record<string, {
   en: {
     messageEyebrow: "Our Philosophy",
     messageTitle: "Crossing Borders,\nWalking Together",
-    messageBody: "HT Global Holdings Co., Ltd. is built on safety, transparency and long-term value. We empower global investors to enter the Japanese real estate market with confidence, backed by a multilingual expert team at every step.\n\nFrom property search to purchase, rental management and exit strategy — we handle it all under one roof, as your long-term investment partner.",
+    messageBody: "HT Global Co., Ltd. is built on safety, transparency and long-term value. We empower global investors to enter the Japanese real estate market with confidence, backed by a multilingual expert team at every step.\n\nFrom property search to purchase, rental management and exit strategy — we handle it all under one roof, as your long-term investment partner.",
     bizEyebrow: "Services",
     bizTitle: "Services",
     bizItems: [
@@ -143,7 +143,7 @@ const T: Record<string, {
   vi: {
     messageEyebrow: "Triết lý của chúng tôi",
     messageTitle: "Vượt biên giới,\ncùng bước với bạn",
-    messageBody: "HT Global Holdings được xây dựng trên nền tảng an toàn, minh bạch và giá trị dài hạn. Đội ngũ chuyên gia đa ngôn ngữ đồng hành cùng nhà đầu tư toàn cầu tiếp cận thị trường bất động sản Nhật Bản.\n\nTừ tìm kiếm bất động sản đến mua bán, quản lý cho thuê và chiến lược thoát vốn — một đầu mối, toàn diện.",
+    messageBody: "HT Global Co., Ltd. được xây dựng trên nền tảng an toàn, minh bạch và giá trị dài hạn. Đội ngũ chuyên gia đa ngôn ngữ đồng hành cùng nhà đầu tư toàn cầu tiếp cận thị trường bất động sản Nhật Bản.\n\nTừ tìm kiếm bất động sản đến mua bán, quản lý cho thuê và chiến lược thoát vốn — một đầu mối, toàn diện.",
     bizEyebrow: "Dịch vụ",
     bizTitle: "Dịch vụ",
     bizItems: [

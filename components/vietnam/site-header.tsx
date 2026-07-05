@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Building2, ChevronLeft, Menu } from "lucide-react";
 import { Button } from "@/components/vietnam/ui/button";
@@ -16,10 +17,18 @@ export function SiteHeader({ locale, lang }: { locale: Locale; lang: string }) {
             href={`/${lang}`}
             className="flex items-center gap-1.5 text-xs font-medium text-neutral-500 transition-colors hover:text-[var(--onsen-accent)]"
           >
-            <ChevronLeft className="h-3 w-3" />
-            <span className="font-semibold tracking-wide">HTグローバル</span>
-            <span className="text-neutral-300">·</span>
-            <span>日本不動産</span>
+              <ChevronLeft className="h-3 w-3" />
+              <span>
+                <Image
+                  src="/assets/red/logo.jpg"
+                  alt="HTグローバル"
+                  width={96}
+                  height={30}
+                  style={{ height: 24, width: "auto", objectFit: "contain" }}
+                />
+              </span>
+              <span className="text-neutral-300">·</span>
+              <span>日本不動産</span>
           </a>
           <span className="text-xs tracking-widest uppercase text-neutral-400 font-medium">
             Vietnam
@@ -34,18 +43,13 @@ export function SiteHeader({ locale, lang }: { locale: Locale; lang: string }) {
           href={localizedPath(locale)}
           className="flex items-center gap-2.5 shrink-0 text-decoration-none"
         >
-          <span
-            className="flex h-8 w-8 items-center justify-center rounded-full text-white text-sm font-bold"
-            style={{ background: "var(--onsen-accent)" }}
-          >
-            O
-          </span>
-          <span
-            className="text-lg font-light tracking-wide text-[var(--onsen-ink)]"
-            style={{ fontFamily: '"Times New Roman", serif', letterSpacing: "0.06em" }}
-          >
-            Onsen Fuji
-          </span>
+          <Image
+            src="/assets/red/logo.jpg"
+            alt="HTグローバル"
+            width={180}
+            height={56}
+            style={{ height: 56, width: "auto", objectFit: "contain" }}
+          />
         </Link>
 
         {/* Desktop nav */}
@@ -108,7 +112,7 @@ export function SiteHeader({ locale, lang }: { locale: Locale; lang: string }) {
                 className="flex items-center gap-1.5 text-sm text-neutral-500 hover:text-[var(--onsen-accent)]"
               >
                 <ChevronLeft className="h-4 w-4" />
-                HTグローバル 日本不動産
+                <span>HTグローバル 日本不動産</span>
               </a>
             </div>
           </SheetContent>

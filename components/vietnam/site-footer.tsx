@@ -22,6 +22,9 @@ export function SiteFooter({ locale }: { locale: Locale }) {
             </p>
             <p className="text-sm leading-7 text-neutral-400">{siteConfig.company.name}</p>
             <p className="mt-1 text-sm leading-7 text-neutral-400">{siteConfig.company.address}</p>
+            <p className="mt-1 text-sm leading-7 text-neutral-400">TEL: {siteConfig.company.phone} / FAX: {siteConfig.company.fax}</p>
+            <p className="mt-1 text-sm leading-7 text-neutral-400">Mobile: {siteConfig.company.mobile}</p>
+            <p className="mt-1 text-sm leading-7 text-neutral-400">Email: {siteConfig.company.email}</p>
             {siteConfig.company.website && (
               <a
                 href={siteConfig.company.website}

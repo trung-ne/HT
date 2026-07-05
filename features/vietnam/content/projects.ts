@@ -67,7 +67,7 @@ const status = {
 const p = "/assets/projects";
 const pdf = "/assets/pdf-pages";
 
-export const projects: Project[] = [
+const allProjects: Project[] = [
   {
     slug: "lynntimes-thanh-thuy",
     title: lt("Lynn Times Thanh Thuy", "Lynn Times Thanh Thuy", "Lynn Times Thanh Thuy", "Lynn Times Thanh Th?y", "Lynn Times Thanh Thuy"),
@@ -651,6 +651,16 @@ export const projects: Project[] = [
   },
 ];
 
+export const projects: Project[] = allProjects.filter((project) =>
+  [
+    "lynntimes-thanh-thuy",
+    "lynn-times-duyen-hai",
+    "lynntimes-onsen-retreat-ha-nam",
+    "lynn-times-quang-tri",
+  ].includes(project.slug)
+);
+
 export function getProject(slug: string) {
-  return projects.find((project) => project.slug === slug);
-}
+  return allProjects.find((project) => project.slug === slug);
+}
+

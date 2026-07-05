@@ -29,7 +29,7 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
       sections: [
             {
                   "heading": "企業概要",
-                  "body": "会社名：株式会社HTグローバル / 宅建免許：東京都知事（１）第114049号 / 資本金：3,000万円 / 東京本社：〒132-0035 東京都江戸川区平井5-38-3 サンヴェールボニー301号 / TEL/FAX：03-6657-2050",
+                "body": "会社名：HT Global Co., Ltd.（株式会社HTグローバル） / 宅建免許：東京都知事（１）第114049号 / 東京本社：〒132-0035 東京都江戸川区平井5-38-3 サンヴェールボニー301号 / TEL/FAX：03-6657-2050 / FAX：03-6657-2059 / Mobile：070-5366-8643 / Email：umeno.ht.global@gmail.com",
                   "image": "/assets/red/pexels-vanessa-garcia-6325982-scaled.jpg",
                   "reverse": false
             },
@@ -46,7 +46,7 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
                   "reverse": false
             }
       ]
-    },
+              "TEL/FAX：03-6657-2050 / FAX：03-6657-2059 / Mobile：070-5366-8643 / Email：umeno.ht.global@gmail.com",
     "v-service": {
       title: "サービス一覧",
       paragraphs: [
@@ -77,7 +77,7 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
                   "reverse": false
             }
       ]
-    },
+              "HT Global Co., Ltd. (株式会社HTグローバル) / Real Estate License: Tokyo Governor (1) No. 114049 / Head Office: 〒132-0035 東京都江戸川区平井5-38-3 サンヴェールボニー301号 / TEL/FAX: 03-6657-2050 / FAX: 03-6657-2059 / Mobile: 070-5366-8643 / Email: umeno.ht.global@gmail.com",
     blog: {
       title: "ブログ",
       paragraphs: [
@@ -98,7 +98,7 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
         "株式会社HTグローバル",
         "所在地：〒132-0035 東京都江戸川区平井5-38-3 サンヴェールボニー301号",
         "宅建免許：東京都知事（１）第114049号",
-        "資本金：3,000万円",
+        "代表者：梅野 義信 / 取締役 事業部長",
         "代表取締役：代表取締役",
         "TEL/FAX：03-6657-2050",
         "業務内容：不動産売買・仲介、賃貸管理、海外投資家向けコンサルティング",
@@ -109,9 +109,9 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
   },
   en: {
     "v-about": {
-      title: "About HT Global Holdings",
+      title: "About HT Global",
       paragraphs: [
-        "HT Global Holdings Co., Ltd. was founded to help global investors and residents access Japan's real estate market with clarity and confidence.",
+        "HT Global Co., Ltd. was founded to help global investors and residents access Japan's real estate market with clarity and confidence.",
         "Our team includes multilingual professionals fluent in Japanese, English, Chinese, and Thai, ensuring that clients from all backgrounds receive culturally informed, expert guidance.",
         "From property discovery through purchase, rental management, and beyond, we provide end-to-end support under one roof.",
         "We are committed to long-term partnerships, placing transparency and your investment outcomes at the center of everything we do.",
@@ -119,24 +119,24 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
       sections: [
             {
                   "heading": "Company Profile",
-                  "body": "HT Global Holdings Co., Ltd. (株式会社HTグローバル) / Real Estate License: Tokyo Governor (1) No. 114049 / Capital: ¥30,000,000 / Head Office: 5-38-3 Hirai, Edogawa-ku, Tokyo 132-0035, Sunveil Bony 301 / TEL/FAX: 03-6657-2050",
+                  "body": "HT Global Co., Ltd. (株式会社HTグローバル) / Real Estate License: Tokyo Governor (1) No. 114049 / Head Office: 〒132-0035 東京都江戸川区平井5-38-3 サンヴェールボニー301号 / TEL/FAX: 03-6657-2050 / FAX: 03-6657-2059 / Mobile: 070-5366-8643 / Email: umeno.ht.global@gmail.com",
                   "image": "/assets/red/pexels-vanessa-garcia-6325982-scaled.jpg",
                   "reverse": false
             },
             {
                   "heading": "Company History",
-                  "body": "HT Global Holdings Co., Ltd. is a licensed real estate firm based in Edogawa-ku, Tokyo. We specialize in connecting global investors with Japan's real estate market through multilingual, full-service support.",
+                  "body": "HT Global Co., Ltd. is a licensed real estate firm based in Edogawa-ku, Tokyo. We specialize in connecting global investors with Japan's real estate market through multilingual, full-service support.",
                   "image": "/assets/red/pexels-max-vakhtbovych-7060815-scaled.jpg",
                   "reverse": true
             },
             {
                   "heading": "CEO Message",
-                  "body": "Japanese real estate stands out for four key strengths: superior construction quality, comprehensive property management services, high rental yield, and diverse financing options. Whether you're buying for personal use or long-term investment, HT Global Holdings will find the perfect property tailored to your goals.",
+                  "body": "Japanese real estate stands out for four key strengths: superior construction quality, comprehensive property management services, high rental yield, and diverse financing options. Whether you're buying for personal use or long-term investment, HT Global will find the perfect property tailored to your goals.",
                   "image": "/assets/red/pexels-roman-pohorecki-230557-1-scaled.jpg",
                   "reverse": false
             }
       ]
-    },
+              "TEL/FAX: 03-6657-2050 / FAX: 03-6657-2059 / Mobile: 070-5366-8643 / Email: umeno.ht.global@gmail.com",
     "v-service": {
       title: "Our Services",
       paragraphs: [
@@ -150,7 +150,7 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
       sections: [
             {
                   "heading": "Real Estate Investment Consulting",
-                  "body": "HT Global Holdings has been deeply rooted in Japan's real estate market, providing each client with bespoke, professional, and practical investment advice from an on-the-ground perspective. We help you identify optimal investment opportunities in a rapidly developing Tokyo metropolitan area.",
+                  "body": "HT Global has been deeply rooted in Japan's real estate market, providing each client with bespoke, professional, and practical investment advice from an on-the-ground perspective. We help you identify optimal investment opportunities in a rapidly developing Tokyo metropolitan area.",
                   "image": "/assets/red/pexels-karolina-grabowska-8554832-scaled.jpg",
                   "reverse": false
             },
@@ -167,11 +167,11 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
                   "reverse": false
             }
       ]
-    },
+                "body": "公司名称：HT Global Co., Ltd.（株式会社HTグローバル）/ 宅建许可证：东京都知事（１）第114049号 / 总部：〒132-0035 東京都江戸川区平井5-38-3 サンヴェールボニー301号 / 电话/传真：03-6657-2050 / 传真：03-6657-2059 / 手机：070-5366-8643 / Email：umeno.ht.global@gmail.com",
     blog: {
       title: "Blog",
       paragraphs: [
-        "The HT Global Holdings blog delivers timely insights on Japan's real estate market — market trends, regulatory changes, tax updates, and property highlights.",
+        "The HT Global blog delivers timely insights on Japan's real estate market — market trends, regulatory changes, tax updates, and property highlights.",
         "Whether you're exploring your first investment or managing a growing portfolio, our articles give you actionable, trustworthy information.",
       ],
     },
@@ -185,7 +185,7 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
     cdmmr: {
       title: "Specified Commercial Transactions",
       paragraphs: [
-        "Company Name: HT Global Holdings Co., Ltd. (株式会社HTグローバル)",
+        "Company Name: HT Global Co., Ltd. (株式会社HTグローバル)",
         "Address: 5-38-3 Hirai, Edogawa-ku, Tokyo 132-0035, Sunveil Bony 301",
         "Real Estate License: Tokyo Governor (1) No. 114049",
         "Capital: ¥30,000,000",
@@ -210,7 +210,7 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
       sections: [
             {
                   "heading": "企业概况",
-                  "body": "公司名称：株式会社HTグローバル（HT Global Holdings Co., Ltd.）/ 宅建许可证：东京都知事（１）第114049号 / 注册资本：3000万日元 / 总部：〒132-0035 东京都江户川区平井5-38-3 サンヴェールボニー301号 / 电话/传真：03-6657-2050",
+                  "body": "公司名称：株式会社HTグローバル（HT Global Co., Ltd.）/ 宅建许可证：东京都知事（１）第114049号 / 总部：〒132-0035 东京都江户川区平井5-38-3 サンヴェールボニー301号 / 电话/传真：03-6657-2050 / 传真：03-6657-2059 / 手机：070-5366-8643 / Email：umeno.ht.global@gmail.com",
                   "image": "/assets/red/pexels-vanessa-garcia-6325982-scaled.jpg",
                   "reverse": false
             },
@@ -227,7 +227,7 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
                   "reverse": false
             }
       ]
-    },
+              "电话/传真：03-6657-2050 / 传真：03-6657-2059 / 手机：070-5366-8643 / Email：umeno.ht.global@gmail.com",
     "v-service": {
       title: "服务项目",
       paragraphs: [
@@ -258,7 +258,7 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
                   "reverse": false
             }
       ]
-    },
+              "HT Global Co., Ltd. được thành lập nhằm hỗ trợ các nhà đầu tư và người muốn định cư trên toàn thế giới tiếp cận thị trường bất động sản Nhật Bản một cách rõ ràng và tự tin.",
     blog: {
       title: "博客",
       paragraphs: [
@@ -276,10 +276,10 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
     cdmmr: {
       title: "特定商业交易法标示",
       paragraphs: [
-        "公司名称：株式会社HTグローバル（HT Global Holdings Co., Ltd.）",
+        "公司名称：株式会社HTグローバル（HT Global Co., Ltd.）",
         "总部地址：〒132-0035 东京都江户川区平井5-38-3 サンヴェールボニー301号",
         "宅建许可证：东京都知事（１）第114049号",
-        "注册资本：3000万日元",
+        "代表者：梅野 義信 / 取締役 事業部長",
         "代表人：董事长",
         "电话/传真：03-6657-2050",
         "业务内容：不动产买卖与中介、租赁管理、海外投资者房地产咨询",
@@ -293,7 +293,7 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
     "v-about": {
       title: "Về HT Global",
       paragraphs: [
-        "HT Global Holdings Co., Ltd. được thành lập nhằm hỗ trợ các nhà đầu tư và người muốn định cư trên toàn thế giới tiếp cận thị trường bất động sản Nhật Bản một cách rõ ràng và tự tin.",
+        "HT Global Co., Ltd. được thành lập nhằm hỗ trợ các nhà đầu tư và người muốn định cư trên toàn thế giới tiếp cận thị trường bất động sản Nhật Bản một cách rõ ràng và tự tin.",
         "Đội ngũ của chúng tôi gồm các chuyên gia đa ngôn ngữ, thành thạo tiếng Nhật, Anh, Trung và Việt.",
         "Từ tìm kiếm, mua bán, quản lý cho thuê đến bảo lãnh lợi nhuận dài hạn, chúng tôi cung cấp dịch vụ toàn diện dưới một mái nhà.",
         "Chúng tôi hướng đến mối quan hệ lâu dài, ưu tiên minh bạch và hiệu quả đầu tư cho bạn.",
@@ -301,13 +301,13 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
       sections: [
             {
                   "heading": "Thông tin công ty",
-                  "body": "Tên công ty: HT Global Holdings Co., Ltd. (株式会社HTグローバル) / Giấy phép BĐS: Tokyo Governor (1) No. 114049 / Vốn điều lệ: 30 triệu yên / Trụ sở chính: 5-38-3 Hirai, Edogawa-ku, Tokyo 132-0035, Sunveil Bony 301 / ĐT/Fax: 03-6657-2050",
+                "body": "Tên công ty: HT Global Co., Ltd. (株式会社HTグローバル) / Giấy phép BĐS: Tokyo Governor (1) No. 114049 / Trụ sở chính: 〒132-0035 東京都江戸川区平井5-38-3 サンヴェールボニー301号 / ĐT/Fax: 03-6657-2050 / Fax: 03-6657-2059 / Mobile: 070-5366-8643 / Email: umeno.ht.global@gmail.com",
                   "image": "/assets/red/pexels-vanessa-garcia-6325982-scaled.jpg",
                   "reverse": false
             },
             {
                   "heading": "Lịch sử công ty",
-                  "body": "HT Global Holdings Co., Ltd. là công ty bất động sản có giấy phép hoạt động tại Edogawa-ku, Tokyo. Chúng tôi chuyên kết nối nhà đầu tư toàn cầu với thị trường bất động sản Nhật Bản thông qua dịch vụ đa ngôn ngữ, toàn diện.",
+                  "body": "HT Global Co., Ltd. là công ty bất động sản có giấy phép hoạt động tại Edogawa-ku, Tokyo. Chúng tôi chuyên kết nối nhà đầu tư toàn cầu với thị trường bất động sản Nhật Bản thông qua dịch vụ đa ngôn ngữ, toàn diện.",
                   "image": "/assets/red/pexels-max-vakhtbovych-7060815-scaled.jpg",
                   "reverse": true
             },
@@ -318,11 +318,11 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
                   "reverse": false
             }
       ]
-    },
+              "ĐT/Fax: 03-6657-2050 / Fax: 03-6657-2059 / Mobile: 070-5366-8643 / Email: umeno.ht.global@gmail.com",
     "v-service": {
       title: "Dịch vụ của chúng tôi",
       paragraphs: [
-        "HT Global Holdings cung cấp dịch vụ toàn diện cho việc đầu tư bất động sản Nhật Bản.",
+        "HT Global cung cấp dịch vụ toàn diện cho việc đầu tư bất động sản Nhật Bản.",
         "[Môi giới bất động sản] Căn hộ, chưng cư, nhà ở và đất nền — bao gồm mua, bán và cho thuê.",
         "[Địch vụ quản lý cho thuê] Tìm khách thuê, quản lý hợp đồng, sửa chữa và quyết toán thuế.",
         "[Địch vụ cải tạo] Kết nối với các đơn vị thi công uy tín để tăng giá trị bất động sản.",
@@ -332,7 +332,7 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
       sections: [
             {
                   "heading": "Tư vấn đầu tư bất động sản",
-                  "body": "HT Global Holdings đã gắn bó sâu sắc với thị trường bất động sản Nhật Bản, cung cấp tư vấn đầu tư chuyên nghiệp, thực tiễn cho từng khách hàng. Sự phát triển hạ tầng Tokyo mở ra nhiều cơ hội đầu tư lý tưởng mà chúng tôi sẵn sàng hỗ trợ bạn nắm bắt.",
+                  "body": "HT Global đã gắn bó sâu sắc với thị trường bất động sản Nhật Bản, cung cấp tư vấn đầu tư chuyên nghiệp, thực tiễn cho từng khách hàng. Sự phát triển hạ tầng Tokyo mở ra nhiều cơ hội đầu tư lý tưởng mà chúng tôi sẵn sàng hỗ trợ bạn nắm bắt.",
                   "image": "/assets/red/pexels-karolina-grabowska-8554832-scaled.jpg",
                   "reverse": false
             },
@@ -353,7 +353,7 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
     blog: {
       title: "Blog",
       paragraphs: [
-        "Blog của HT Global Holdings cập nhật xu hướng thị trường, thay đổi pháp luật, thông tin thuế và các thông tin hấp dẫn về bất động sản Nhật Bản.",
+        "Blog của HT Global cập nhật xu hướng thị trường, thay đổi pháp luật, thông tin thuế và các thông tin hấp dẫn về bất động sản Nhật Bản.",
         "Dù bạn mới bắt đầu hay là nhà đầu tư dày dạn kinh nghiệm, các bài viết của chúng tôi đều thực tế và đáng tin cậy.",
       ],
     },
@@ -361,16 +361,16 @@ export const splitPageContent: Record<LanguageCode, Record<SplitPageKey, SplitPa
       title: "Liên hệ chúng tôi",
       paragraphs: [
         "Nếu bạn có bất kỳ câu hỏi nào về đầu tư bất động sản Nhật Bản, đừng ngần ngại liên hệ chúng tôi.",
-        "HT Global Holdings hỗ trợ bằng tiếng Nhật, Anh, Trung và Việt. Chúng tôi sẽ phản hồi sớm nhất có thể.",
+        "HT Global hỗ trợ bằng tiếng Nhật, Anh, Trung và Việt. Chúng tôi sẽ phản hồi sớm nhất có thể.",
       ],
     },
     cdmmr: {
       title: "Thông tin giao dịch thương mại",
       paragraphs: [
-        "Tên công ty: HT Global Holdings Co., Ltd. (株式会社HTグローバル)",
+        "Tên công ty: HT Global Co., Ltd. (株式会社HTグローバル)",
         "Địa chỉ: 5-38-3 Hirai, Edogawa-ku, Tokyo 132-0035, Sunveil Bony 301",
         "Giấy phép BĐS: Tokyo Governor (1) No. 114049",
-        "Vốn điều lệ: 30 triệu yên",
+        "Đại diện: 梅野 義信 / Giám đốc & Trưởng bộ phận",
         "Giám đốc điều hành: Giám đốc điều hành",
         "ĐT/Fax: 03-6657-2050",
         "Nội dung kinh doanh: Mua bán & môi giới bất động sản, quản lý cho thuê, tư vấn đầu tư cho nhà đầu tư nước ngoài",

@@ -46,7 +46,7 @@ const SLIDES: Record<LanguageCode, Slide[]> = {
       eyebrow: "Japanese Real Estate",
       title: "Your Trusted Gateway\nto Japan Real Estate",
       subtitle: "Built on safety, transparency and long-term value — empowering global investors to enter the Japanese market with confidence.",
-      ctaLabel: "About HT Global Holdings",
+      ctaLabel: "About HT Global",
       ctaHref: "/en/v-about",
     },
     {

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -47,8 +48,14 @@ export function AppHeader({ lang }: AppHeaderProps) {
         {/* Brand */}
         <div className="l-header__brand">
           <Link href={`/${lang}`} className="l-header__logo-link" style={{ textDecoration: "none" }}>
-            <span className="l-header__logo-mark">HT</span>
-            <span className="l-header__logo-text">HTグローバル</span>
+            <Image
+              src="/assets/red/logo.jpg"
+              alt="HTグローバル"
+              width={180}
+              height={56}
+              priority
+              style={{ height: 56, width: "auto", objectFit: "contain" }}
+            />
           </Link>
         </div>
 

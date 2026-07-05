@@ -5,15 +5,15 @@ export const allPosts: BlogPost[] = [
   {
     slug: "why-invest-in-japan-real-estate",
     lang: "ja",
-    title: "なぜ今、日本の不動産に投資するのか",
+    title: "海外投資家向け日本不動産投資ガイド",
     excerpt:
-      "日本の不動産市場は、安定したキャッシュフロー・低金利・透明な法制度という三拍子が揃った希少な投資先です。",
+      "日本不動産の売買・仲介・賃貸管理・投資コンサルティングを、海外投資家向けにわかりやすく整理した入門ガイドです。",
     category: "investment",
     coverImage:
       "/assets/red/pexels-karolina-grabowska-8554832-scaled.jpg",
     publishedAt: "2026-04-01",
     readingMinutes: 5,
-    tags: ["投資", "日本不動産", "市場分析"],
+    tags: ["海外投資", "日本不動産", "賃貸管理", "売買"],
     content: `
 <p>日本の不動産は、世界の投資家から注目を集めています。その理由は単純明快です。<strong>安定したキャッシュフロー、低い空室率、透明性の高い法制度</strong>の三点が揃っているからです。</p>
 <h2>東京の市場動向</h2>
@@ -55,15 +55,15 @@ export const allPosts: BlogPost[] = [
   {
     slug: "why-invest-in-japan-real-estate",
     lang: "en",
-    title: "Why Invest in Japanese Real Estate Now",
+    title: "Japanese Real Estate Investment Guide for Overseas Buyers",
     excerpt:
-      "Japan offers a rare trifecta for global investors: stable cash flow, transparent regulation, and long-term value preservation.",
+      "A practical guide to real estate sales, brokerage, rental management, and consulting for overseas investors in Japan.",
     category: "investment",
     coverImage:
       "/assets/red/pexels-karolina-grabowska-8554832-scaled.jpg",
     publishedAt: "2026-04-01",
     readingMinutes: 5,
-    tags: ["Investment", "Japan", "Market Analysis"],
+    tags: ["Overseas Investors", "Japan Real Estate", "Rental Management", "Brokerage"],
     content: `
 <p>Japan's real estate market stands out globally for three compelling reasons: <strong>stable cash flow, low vacancy rates, and a transparent legal framework</strong> that protects foreign investors.</p>
 <h2>Tokyo Market Overview</h2>
@@ -103,15 +103,15 @@ export const allPosts: BlogPost[] = [
   {
     slug: "why-invest-in-japan-real-estate",
     lang: "zh",
-    title: "为什么现在投资日本房地产",
+    title: "海外投资者日本不动产投资指南",
     excerpt:
-      "日本为全球投资者提供了难得的三重优势：稳定的现金流、透明的法规体系和长期保值能力。",
+      "围绕不动产买卖、中介、出租管理与咨询，整理给海外投资者的日本房产入门指南。",
     category: "investment",
     coverImage:
       "/assets/red/pexels-karolina-grabowska-8554832-scaled.jpg",
     publishedAt: "2026-04-01",
     readingMinutes: 5,
-    tags: ["投资", "日本", "市场分析"],
+    tags: ["海外投资", "日本不动产", "出租管理", "中介"],
     content: `
 <p>日本房地产市场因三大优势而在全球脱颖而出：<strong>稳定的现金流、低空置率以及保护外国投资者的透明法律框架</strong>。</p>
 <h2>东京市场概况</h2>
@@ -127,15 +127,15 @@ export const allPosts: BlogPost[] = [
   {
     slug: "why-invest-in-japan-real-estate",
     lang: "vi",
-    title: "Tại sao nên đầu tư bất động sản Nhật Bản ngay bây giờ",
+    title: "Hướng dẫn đầu tư bất động sản Nhật Bản cho nhà đầu tư nước ngoài",
     excerpt:
-      "Nhật Bản mang đến bộ ba hiếm có cho nhà đầu tư toàn cầu: dòng tiền ổn định, pháp lý minh bạch và bảo toàn giá trị dài hạn.",
+      "Bài viết tổng quan về mua bán, môi giới, cho thuê, quản lý và tư vấn bất động sản Nhật Bản dành cho nhà đầu tư nước ngoài.",
     category: "investment",
     coverImage:
       "/assets/red/pexels-karolina-grabowska-8554832-scaled.jpg",
     publishedAt: "2026-04-01",
     readingMinutes: 5,
-    tags: ["Đầu tư", "Nhật Bản", "Phân tích thị trường"],
+    tags: ["Đầu tư nước ngoài", "Bất động sản Nhật Bản", "Quản lý cho thuê", "Môi giới"],
     content: `
 <p>Thị trường bất động sản Nhật Bản nổi bật toàn cầu nhờ ba lý do: <strong>dòng tiền ổn định, tỷ lệ trống thấp và khung pháp lý minh bạch</strong> bảo vệ nhà đầu tư nước ngoài.</p>
 <h2>Tổng quan thị trường Tokyo</h2>
