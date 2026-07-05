@@ -93,10 +93,10 @@ export function AppFooter({ lang }: AppFooterProps) {
               Contact
             </p>
             <a
-              href="mailto:info@redhomes.jp"
+              href="mailto:ht.global.info1@gmail.com"
               style={{ fontSize: "13px", color: "#9aa0a6", textDecoration: "none" }}
             >
-              info@redhomes.jp
+              ht.global.info1@gmail.com
             </a>
             <p style={{ marginTop: "6px", fontSize: "12px", color: "#9aa0a6" }}>Tokyo, Japan</p>
           </div>
