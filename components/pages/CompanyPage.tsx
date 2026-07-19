@@ -251,7 +251,7 @@ export default function CompanyPage({ lang }: Props) {
       <section className="p-page-hero">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/assets/brand/corporate-culture-silhouette-01.jpg"
+          src="/information/1784437041822_7237405166500974155_7237405166500974155_a9448b85e35a3a5bb6a32b1790fe77e3.jpg"
           alt=""
           className="p-page-hero__img"
         />
@@ -288,7 +288,7 @@ export default function CompanyPage({ lang }: Props) {
               <div className="p-company-message__img">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/brand/corporate-culture-silhouette-01.jpg"
+                  src="/information/1784437041822_7237405166500974155_7237405166500974155_a9448b85e35a3a5bb6a32b1790fe77e3.jpg"
                   alt={t.messageHeading}
                 />
               </div>
