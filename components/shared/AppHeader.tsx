@@ -61,7 +61,7 @@ export function AppHeader({ lang }: AppHeaderProps) {
 
         {/* Desktop nav */}
         <nav className={`l-header__nav-wrap${isMobileMenuOpen ? " is-open" : ""}`} aria-label="Main navigation">
-          <ul className="p-global-nav">
+          <ul className={`p-global-nav${isMobileMenuOpen ? " is-open" : ""}`}>
             {navItems.map((item) => (
               <li key={item.href} className="p-global-nav__item">
                 <Link

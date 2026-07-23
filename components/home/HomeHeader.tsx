@@ -74,7 +74,7 @@ export default function HomeHeader({
 
         {/* Global nav */}
         <nav className={`l-header__nav-wrap${isMobileMenuOpen ? " is-open" : ""}`}>
-          <ul id="js-global-nav" className="p-global-nav">
+          <ul id="js-global-nav" className={`p-global-nav${isMobileMenuOpen ? " is-open" : ""}`}>
             {globalNav.map((item) => {
               const hasChildren = item.children && item.children.length > 0;
               const isOpen = openDropdown === item.label;
