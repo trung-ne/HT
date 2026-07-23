@@ -1,0 +1,92 @@
+:root {
+  --header-height: 70px;
+}
+
+/* Ensure no default body gap */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure root containers have no gap that could push header down */
+#__next, main {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header: fixed at top, animate with transform (keep existing show/hide JS logic) */
+.l-header {
+  position: fixed;
+  top: 0 !important;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: var(--header-height);
+  /* Default: visible. If you want it hidden, add the `.l-header--hidden` class. */
+  transform: translateY(0);
+  transition: transform 240ms ease, opacity 180ms ease;
+  will-change: transform;
+  z-index: 50;
+  background: var(--header-bg, #fff);
+  border: none;
+  outline: none;
+  -webkit-backface-visibility: hidden;
+}
+
+.l-header--hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.l-header--visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Ensure header content is visible and on top */
+.l-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+  color: var(--header-color, #111);
+}
+
+.l-header, .l-header * {
+  color: inherit !important;
+}
+
+.l-header a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* Make sure logo images inside header are visible */
+.l-header img {
+  display: block;
+  max-height: calc(var(--header-height) - 12px);
+}
+
+/* If header sits over content, ensure content is pushed down */
+body.has-fixed-header main, body.has-fixed-header .l-site__content {
+  padding-top: var(--header-height);
+}
+
+/* Helpful debug: if header still not visible, uncomment to set a temporary visible color */
+/* .l-header { background: rgba(255,255,255,0.98) !important; } */
+
+/* DEBUG: outline header areas so we can see where header actually is. Remove when confirmed. */
+header, .l-header, .site-header, .header {
+  outline: 3px solid rgba(255,0,128,0.6) !important;
+}
+
+/* Provide offset so content isn't covered by the fixed header */
+main, .l-site__content, .page-content, .site-content {
+  padding-top: var(--header-height);
+}
+
+/* If a small top gap remains due to border or outline, make header flush */
+.l-header {
+  border-top: none;
+}
